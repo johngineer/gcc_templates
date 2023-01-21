@@ -1,0 +1,60 @@
+ init_snowflake
+[01m[K./src/nsnow_flakes.c:[m[K In function 
+   ‘[01m[Kinit_snowflake[m[K’:
+[01m[K./src/nsnow_flakes.c:19:3:[m[K [01;35m[Kwarning: [m[Kimplicit 
+   declaration of function ‘[01m[Kdcount_init[m[K’ [[01;35m[K
+   -Wimplicit-function-declaration[m[K]
+   19 |   [01;35m[Kdcount_init[m[K(&sf->col, sf->col_start, 1, 1, 0, cfg->col_w
+ait_max_count);
+      |   [01;35m[K^~~~~~~~~~~[m[K
+[01m[K./src/nsnow_flakes.c:20:3:[m[K [01;35m[Kwarning: [m[Kimplicit 
+   declaration of function ‘[01m[Krw_init[m[K’ [[01;35m[K
+   -Wimplicit-function-declaration[m[K]
+   20 |   [01;35m[Krw_init[m[K(&sf->col_jitter, 8,
+      |   [01;35m[K^~~~~~~[m[K
+ update_snowflake
+[01m[K./src/nsnow_flakes.c:[m[K In function 
+   ‘[01m[Kupdate_snowflake[m[K’:
+[01m[K./src/nsnow_flakes.c:39:5:[m[K [01;35m[Kwarning: [m[Kimplicit 
+   declaration of function ‘[01m[Kdcount_tick[m[K’ [[01;35m[K
+   -Wimplicit-function-declaration[m[K]
+   39 |     [01;35m[Kdcount_tick[m[K(&sf->new_flake);
+      |     [01;35m[K^~~~~~~~~~~[m[K
+[01m[K./src/nsnow_flakes.c:41:9:[m[K [01;35m[Kwarning: [m[Kimplicit 
+   declaration of function ‘[01m[Kdcount_rollover[m[K’ [[01;35m[K
+   -Wimplicit-function-declaration[m[K]
+   41 |     if ([01;35m[Kdcount_rollover[m[K(&sf->new_flake))
+      |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K./src/nsnow_flakes.c:43:7:[m[K [01;35m[Kwarning: [m[Kimplicit 
+   declaration of function ‘[01m[Kdcount_reset[m[K’ [[01;35m[K
+   -Wimplicit-function-declaration[m[K]
+   43 |       [01;35m[Kdcount_reset[m[K(&sf->row, 0);
+      |       [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K./src/nsnow_flakes.c:51:27:[m[K [01;35m[Kwarning: [m[Kimplicit 
+   declaration of function ‘[01m[Krw_next[m[K’ [[01;35m[K
+   -Wimplicit-function-declaration[m[K]
+   51 |     sf->x = sf->col.val + [01;35m[Krw_next[m[K(&sf->col_jitter);
+      |                           [01;35m[K^~~~~~~[m[K
+[01m[K./src/nsnow_flakes.c:56:7:[m[K [01;35m[Kwarning: [m[Kimplicit 
+   declaration of function ‘[01m[Kdcount_set_max[m[K’ [[01;35m[K
+   -Wimplicit-function-declaration[m[K]
+   56 |       [01;35m[Kdcount_set_max[m[K(&sf->row, rw_next(&sf->row_wait_jitte
+r));
+      |       [01;35m[K^~~~~~~~~~~~~~[m[K
+ sf_print
+Analyzing compilation unit
+Performing interprocedural optimizations
+ <*free_lang_data> <visibility> <build_ssa_passes> <opt_local_passes> <remove_symbols> <targetclone> <free-fnsummary>Streaming LTO
+ <whole-program> <hsa> <fnsummary> <inline> <free-fnsummary> <single-use> <comdats>Assembling functions:
+ <materialize-all-clones> <simdclone> init_snowflake update_snowflake sf_print
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1138 kB ( 34%)
+ phase parsing                      :   0.00 (  0%)   0.01 (100%)   0.02 (100%)    1897 kB ( 56%)
+ phase opt and generate             :   0.01 (100%)   0.00 (  0%)   0.00 (  0%)     347 kB ( 10%)
+ preprocessing                      :   0.00 (  0%)   0.01 (100%)   0.00 (  0%)     719 kB ( 21%)
+ parser (global)                    :   0.00 (  0%)   0.00 (  0%)   0.01 ( 50%)     895 kB ( 26%)
+ parser function body               :   0.00 (  0%)   0.00 (  0%)   0.01 ( 50%)      29 kB (  1%)
+ initialize rtl                     :   0.01 (100%)   0.00 (  0%)   0.00 (  0%)      12 kB (  0%)
+ TOTAL                              :   0.01          0.01          0.02           3398 kB
+# cc1 0.02 0.02
+# as 0.00 0.00

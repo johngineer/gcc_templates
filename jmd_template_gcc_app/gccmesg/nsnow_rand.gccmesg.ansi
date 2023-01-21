@@ -1,0 +1,17 @@
+ rw_init rw_inc_last rw_store_next rw_store_next_rand rw_find_mean rw_next
+Analyzing compilation unit
+Performing interprocedural optimizations
+ <*free_lang_data> <visibility> <build_ssa_passes> <opt_local_passes> <remove_symbols> <targetclone> <free-fnsummary>Streaming LTO
+ <whole-program> <hsa> <fnsummary> <inline> <free-fnsummary> <single-use> <comdats>Assembling functions:
+ <materialize-all-clones> <simdclone> rw_init rw_inc_last rw_store_next rw_store_next_rand rw_find_mean rw_next
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1138 kB ( 48%)
+ phase parsing                      :   0.00 (  0%)   0.01 (100%)   0.01 ( 33%)     866 kB ( 37%)
+ phase opt and generate             :   0.01 (100%)   0.00 (  0%)   0.01 ( 33%)     352 kB ( 15%)
+ dump files                         :   0.01 (100%)   0.00 (  0%)   0.00 (  0%)       0 kB (  0%)
+ preprocessing                      :   0.00 (  0%)   0.01 (100%)   0.00 (  0%)     272 kB ( 11%)
+ parser (global)                    :   0.00 (  0%)   0.00 (  0%)   0.01 ( 33%)     348 kB ( 15%)
+ initialize rtl                     :   0.00 (  0%)   0.00 (  0%)   0.01 ( 33%)      12 kB (  1%)
+ TOTAL                              :   0.01          0.01          0.03           2370 kB
+# cc1 0.01 0.02
+# as 0.01 0.00

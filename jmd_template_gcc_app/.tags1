@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+scrh	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int scrh = 23;$/;"	variable	line:3
+scrw	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int scrw = 80;$/;"	variable	line:4
+win	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^WINDOW* win;$/;"	variable	line:6
+colorwheel	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^char colorwheel[8] =$/;"	variable	line:8
+disp_init	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_init(void)$/;"	function	line:21	signature:(void)
+disp_uninit	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_uninit(void)$/;"	function	line:47	signature:(void)
+disp_refresh	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_refresh(void)$/;"	function	line:52	signature:(void)
+disp_clear	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_clear(void)$/;"	function	line:57	signature:(void)
+disp_rows	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_rows(void)$/;"	function	line:62	signature:(void)
+disp_cols	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_cols(void)$/;"	function	line:67	signature:(void)
+draw_snowflake	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int draw_snowflake(snowflake_t* sf)$/;"	function	line:72	signature:(snowflake_t* sf)
+show_snowflake	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int show_snowflake(int x, int y, snowflake_t* sf, const char* name)$/;"	function	line:79	signature:(int x, int y, snowflake_t* sf, const char* name)
+show_dcounter	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int show_dcounter(int x, int y, dcounter_t* dc, const char* name)$/;"	function	line:112	signature:(int x, int y, dcounter_t* dc, const char* name)
+show_randwin	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int show_randwin(int x, int y, rand_window_t* rw, const char* name)$/;"	function	line:126	signature:(int x, int y, rand_window_t* rw, const char* name)

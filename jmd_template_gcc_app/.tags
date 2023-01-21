@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+NSNOW_H	/home/johngineer/code/nsnow/src/nsnow.h	/^#define NSNOW_H$/;"	macro	line:2
+MAX_COLS	/home/johngineer/code/nsnow/src/nsnow.h	/^#define MAX_COLS /;"	macro	line:24
+MAX_ROWS	/home/johngineer/code/nsnow/src/nsnow.h	/^#define MAX_ROWS /;"	macro	line:25
+MAX_FLAKES	/home/johngineer/code/nsnow/src/nsnow.h	/^#define MAX_FLAKES /;"	macro	line:26
+exec	/home/johngineer/code/nsnow/makefile	/^exec := nsnow$/;"	macro	line:2
+obj	/home/johngineer/code/nsnow/makefile	/^obj := .\/obj\/$/;"	macro	line:7
+src	/home/johngineer/code/nsnow/makefile	/^src := .\/src\/$/;"	macro	line:10
+mesg	/home/johngineer/code/nsnow/makefile	/^mesg := .\/gccmesg\/$/;"	macro	line:13
+ofiles	/home/johngineer/code/nsnow/makefile	/^ofiles  := $(obj)nsnow.o $(obj)nsnow_rand.o $(obj)nsnow_flakes.o $(obj)nsnow_counter.o $(obj)nsnow_screen.o$/;"	macro	line:18
+diag	/home/johngineer/code/nsnow/makefile	/^diag := -Q -fdiagnostics-color=always -fmessage-length=80 #		ANSI color$/;"	macro	line:21
+msgext	/home/johngineer/code/nsnow/makefile	/^msgext := gccmesg.ansi # 	for ANSI color output$/;"	macro	line:25
+opts	/home/johngineer/code/nsnow/makefile	/^opts := -g -O0 -std=c99 -lm -I.\/ -time$/;"	macro	line:29
+nsnow	/home/johngineer/code/nsnow/README.md	/^### nsnow$/;"	function	line:1
+NSNOW_RAND_TYPES_H	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^#define NSNOW_RAND_TYPES_H$/;"	macro	line:2
+RAND_WINDOW_MAX	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^#define RAND_WINDOW_MAX /;"	macro	line:7
+rand_window_t	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^typedef struct rand_window_t$/;"	struct	line:10
+values	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  int           values[RAND_WINDOW_MAX];$/;"	member	line:12	struct:rand_window_t
+mean	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  int           mean;$/;"	member	line:13	struct:rand_window_t
+winsize	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  unsigned int  winsize;$/;"	member	line:14	struct:rand_window_t
+last	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  unsigned int  last;$/;"	member	line:15	struct:rand_window_t
+range	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  unsigned int  range;$/;"	member	line:16	struct:rand_window_t
+divisor	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  unsigned int  divisor;$/;"	member	line:17	struct:rand_window_t
+offset	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  int           offset;$/;"	member	line:18	struct:rand_window_t
+scaled	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  int           scaled;$/;"	member	line:19	struct:rand_window_t
+shifted	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^  int           shifted;$/;"	member	line:20	struct:rand_window_t
+rand_window_t	/home/johngineer/code/nsnow/src/nsnow_rand_types.h	/^} rand_window_t;$/;"	typedef	line:22	typeref:struct:rand_window_t
+randwin	/home/johngineer/code/nsnow/src/nsnow_rand.c	/^rand_window_t randwin;$/;"	variable	line:3
+rw_init	/home/johngineer/code/nsnow/src/nsnow_rand.c	/^int rw_init(rand_window_t* w, unsigned int size, unsigned int range, int offset)$/;"	function	line:5	signature:(rand_window_t* w, unsigned int size, unsigned int range, int offset)
+rw_inc_last	/home/johngineer/code/nsnow/src/nsnow_rand.c	/^int rw_inc_last(rand_window_t* w)$/;"	function	line:27	signature:(rand_window_t* w)
+rw_store_next	/home/johngineer/code/nsnow/src/nsnow_rand.c	/^int rw_store_next(rand_window_t* w, int val)$/;"	function	line:35	signature:(rand_window_t* w, int val)
+rw_store_next_rand	/home/johngineer/code/nsnow/src/nsnow_rand.c	/^int rw_store_next_rand(rand_window_t* w)$/;"	function	line:42	signature:(rand_window_t* w)
+rw_find_mean	/home/johngineer/code/nsnow/src/nsnow_rand.c	/^int rw_find_mean(rand_window_t* w)$/;"	function	line:48	signature:(rand_window_t* w)
+rw_next	/home/johngineer/code/nsnow/src/nsnow_rand.c	/^int rw_next(rand_window_t* w)$/;"	function	line:65	signature:(rand_window_t* w)
+NSNOW_TYPES_H	/home/johngineer/code/nsnow/src/nsnow_types.h	/^#define NSNOW_TYPES_H$/;"	macro	line:2
+NSNOW_RAND_H	/home/johngineer/code/nsnow/src/nsnow_rand.h	/^#define NSNOW_RAND_H$/;"	macro	line:2
+NSNOW_FLAKES_H	/home/johngineer/code/nsnow/src/nsnow_flakes.h	/^#define NSNOW_FLAKES_H$/;"	macro	line:2
+NSNOW_SCREEN_H	/home/johngineer/code/nsnow/src/nsnow_screen.h	/^#define NSNOW_SCREEN_H$/;"	macro	line:2
+_XOPEN_SOURCE	/home/johngineer/code/nsnow/src/nsnow.c	/^#define _XOPEN_SOURCE /;"	macro	line:5	file:
+_POSIX_C_SOURCE	/home/johngineer/code/nsnow/src/nsnow.c	/^#define _POSIX_C_SOURCE /;"	macro	line:6	file:
+WSIZE	/home/johngineer/code/nsnow/src/nsnow.c	/^#define WSIZE /;"	macro	line:11	file:
+NUM_FLAKES	/home/johngineer/code/nsnow/src/nsnow.c	/^#define NUM_FLAKES /;"	macro	line:13	file:
+flakes	/home/johngineer/code/nsnow/src/nsnow.c	/^snowflake_t flakes[NUM_FLAKES];$/;"	variable	line:15
+f	/home/johngineer/code/nsnow/src/nsnow.c	/^snowflake_t f, f2, f3;$/;"	variable	line:17
+f2	/home/johngineer/code/nsnow/src/nsnow.c	/^snowflake_t f, f2, f3;$/;"	variable	line:17
+f3	/home/johngineer/code/nsnow/src/nsnow.c	/^snowflake_t f, f2, f3;$/;"	variable	line:17
+tty_h	/home/johngineer/code/nsnow/src/nsnow.c	/^uint16_t    tty_h = 25;$/;"	variable	line:19
+tty_w	/home/johngineer/code/nsnow/src/nsnow.c	/^uint16_t    tty_w = 80;$/;"	variable	line:20
+rw4	/home/johngineer/code/nsnow/src/nsnow.c	/^rand_window_t rw4;$/;"	variable	line:22
+rw16	/home/johngineer/code/nsnow/src/nsnow.c	/^rand_window_t rw16;$/;"	variable	line:23
+main	/home/johngineer/code/nsnow/src/nsnow.c	/^int main(void)$/;"	function	line:27	signature:(void)
+NSNOW_FLAKE_TYPES_H	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^#define NSNOW_FLAKE_TYPES_H$/;"	macro	line:2
+snow_accum_cfg_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^typedef struct snow_accum_cfg_t$/;"	struct	line:9
+snow_accum_cfg_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^} snow_accum_cfg_t;$/;"	typedef	line:12	typeref:struct:snow_accum_cfg_t
+snow_accum_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^typedef struct snow_accum_t$/;"	struct	line:14
+level	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int             level;$/;"	member	line:16	struct:snow_accum_t
+rise	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  dcounter_t      rise;$/;"	member	line:18	struct:snow_accum_t
+rise_rate	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int             rise_rate;$/;"	member	line:19	struct:snow_accum_t
+rise_rate_jitter	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  rand_window_t   rise_rate_jitter;$/;"	member	line:20	struct:snow_accum_t
+fall	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  dcounter_t      fall;$/;"	member	line:22	struct:snow_accum_t
+fall_rate	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int             fall_rate;$/;"	member	line:23	struct:snow_accum_t
+fall_rate_jitter	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  rand_window_t   fall_rate_jitter;$/;"	member	line:24	struct:snow_accum_t
+snow_accum_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^} snow_accum_t;$/;"	typedef	line:26	typeref:struct:snow_accum_t
+snowflake_cfg_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^typedef struct snowflake_cfg_t$/;"	struct	line:28
+symbol	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  char        symbol;$/;"	member	line:30	struct:snowflake_cfg_t
+screen_height	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         screen_height;$/;"	member	line:32	struct:snowflake_cfg_t
+screen_width	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         screen_width;$/;"	member	line:33	struct:snowflake_cfg_t
+col_start	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         col_start;$/;"	member	line:35	struct:snowflake_cfg_t
+row_start	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         row_start;$/;"	member	line:36	struct:snowflake_cfg_t
+col_wait_max_count	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         col_wait_max_count;$/;"	member	line:38	struct:snowflake_cfg_t
+col_jitter_range	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         col_jitter_range;$/;"	member	line:39	struct:snowflake_cfg_t
+col_jitter_range_offset	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         col_jitter_range_offset;  $/;"	member	line:40	struct:snowflake_cfg_t
+row_wait_max_count	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         row_wait_max_count;$/;"	member	line:43	struct:snowflake_cfg_t
+row_wait_jitter_range	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         row_wait_jitter_range;$/;"	member	line:44	struct:snowflake_cfg_t
+row_wait_jitter_offset	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         row_wait_jitter_offset;$/;"	member	line:45	struct:snowflake_cfg_t
+new_flake_wait_max_count	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         new_flake_wait_max_count;$/;"	member	line:47	struct:snowflake_cfg_t
+new_flake_wait_jitter_range	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         new_flake_wait_jitter_range;$/;"	member	line:48	struct:snowflake_cfg_t
+new_flake_wait_jitter_range_offset	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int         new_flake_wait_jitter_range_offset;$/;"	member	line:49	struct:snowflake_cfg_t
+snowflake_cfg_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^} snowflake_cfg_t;$/;"	typedef	line:51	typeref:struct:snowflake_cfg_t
+snowflake_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^typedef struct snowflake_t$/;"	struct	line:53
+id	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int           id;  $/;"	member	line:55	struct:snowflake_t
+symbol	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  char          symbol;$/;"	member	line:56	struct:snowflake_t
+screen_height	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int           screen_height;$/;"	member	line:58	struct:snowflake_t
+screen_width	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int           screen_width;$/;"	member	line:59	struct:snowflake_t
+col_start	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int           col_start;$/;"	member	line:61	struct:snowflake_t
+row_start	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int           row_start;$/;"	member	line:62	struct:snowflake_t
+x	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int           x;  \/\/ column$/;"	member	line:64	struct:snowflake_t
+y	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int           y;  \/\/ row$/;"	member	line:65	struct:snowflake_t
+col	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  dcounter_t    col;$/;"	member	line:67	struct:snowflake_t
+col_jitter	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  rand_window_t col_jitter;$/;"	member	line:68	struct:snowflake_t
+row	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  dcounter_t    row;$/;"	member	line:70	struct:snowflake_t
+row_wait_jitter	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  rand_window_t row_wait_jitter;$/;"	member	line:71	struct:snowflake_t
+row_wait_offset	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  unsigned int  row_wait_offset;       \/\/ simulates wind$/;"	member	line:72	struct:snowflake_t
+waiting_for_next	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  bool          waiting_for_next;$/;"	member	line:74	struct:snowflake_t
+new_flake	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  dcounter_t    new_flake;$/;"	member	line:76	struct:snowflake_t
+new_flake_wait_jitter	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  rand_window_t new_flake_wait_jitter;$/;"	member	line:77	struct:snowflake_t
+new_flake_wait_offset	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  unsigned int  new_flake_wait_offset;$/;"	member	line:78	struct:snowflake_t
+accum	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int accum;  \/\/ keeps track of the amount of snow on the$/;"	member	line:80	struct:snowflake_t
+accum_max	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^  int accum_max;  \/\/ the maximum level of accumulation$/;"	member	line:84	struct:snowflake_t
+snowflake_t	/home/johngineer/code/nsnow/src/nsnow_flake_types.h	/^} snowflake_t;$/;"	typedef	line:86	typeref:struct:snowflake_t
+_id_count	/home/johngineer/code/nsnow/src/nsnow_flakes.c	/^int _id_count = 0;$/;"	variable	line:3
+fchars	/home/johngineer/code/nsnow/src/nsnow_flakes.c	/^char fchars[4] = { ',', '*', '-', '*' };$/;"	variable	line:6
+init_snowflake	/home/johngineer/code/nsnow/src/nsnow_flakes.c	/^int init_snowflake(snowflake_t* sf, snowflake_cfg_t* cfg)$/;"	function	line:8	signature:(snowflake_t* sf, snowflake_cfg_t* cfg)
+update_snowflake	/home/johngineer/code/nsnow/src/nsnow_flakes.c	/^int update_snowflake(snowflake_t* sf)$/;"	function	line:35	signature:(snowflake_t* sf)
+sf_print	/home/johngineer/code/nsnow/src/nsnow_flakes.c	/^int sf_print(snowflake_t* sf, const char* name)$/;"	function	line:76	signature:(snowflake_t* sf, const char* name)
+scrh	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int scrh = 23;$/;"	variable	line:3
+scrw	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int scrw = 80;$/;"	variable	line:4
+win	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^WINDOW* win;$/;"	variable	line:6
+colorwheel	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^char colorwheel[8] =$/;"	variable	line:8
+disp_init	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_init(void)$/;"	function	line:21	signature:(void)
+disp_uninit	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_uninit(void)$/;"	function	line:47	signature:(void)
+disp_refresh	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_refresh(void)$/;"	function	line:52	signature:(void)
+disp_clear	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_clear(void)$/;"	function	line:57	signature:(void)
+disp_rows	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_rows(void)$/;"	function	line:62	signature:(void)
+disp_cols	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int disp_cols(void)$/;"	function	line:67	signature:(void)
+draw_snowflake	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int draw_snowflake(snowflake_t* sf)$/;"	function	line:72	signature:(snowflake_t* sf)
+show_snowflake	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int show_snowflake(int x, int y, snowflake_t* sf, const char* name)$/;"	function	line:79	signature:(int x, int y, snowflake_t* sf, const char* name)
+show_dcounter	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int show_dcounter(int x, int y, dcounter_t* dc, const char* name)$/;"	function	line:112	signature:(int x, int y, dcounter_t* dc, const char* name)
+show_randwin	/home/johngineer/code/nsnow/src/nsnow_screen.c	/^int show_randwin(int x, int y, rand_window_t* rw, const char* name)$/;"	function	line:126	signature:(int x, int y, rand_window_t* rw, const char* name)

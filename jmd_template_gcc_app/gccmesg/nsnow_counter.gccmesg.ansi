@@ -1,0 +1,16 @@
+ dcount_print dcount_init dcount_reset dcount_set_val dcount_get_val dcount_set_cstep dcount_get_cstep dcount_set_max dcount_get_max dcount_rollover dcount_tick
+Analyzing compilation unit
+Performing interprocedural optimizations
+ <*free_lang_data> <visibility> <build_ssa_passes> <opt_local_passes> <remove_symbols> <targetclone> <free-fnsummary>Streaming LTO
+ <whole-program> <hsa> <fnsummary> <inline> <free-fnsummary> <single-use> <comdats>Assembling functions:
+ <materialize-all-clones> <simdclone> dcount_print dcount_init dcount_reset dcount_set_val dcount_get_val dcount_set_cstep dcount_get_cstep dcount_set_max dcount_get_max dcount_rollover dcount_tick
+Time variable                                   usr           sys          wall               GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)    1138 kB ( 43%)
+ phase parsing                      :   0.00 (  0%)   0.00 (  0%)   0.01 ( 50%)     885 kB ( 34%)
+ phase opt and generate             :   0.01 (100%)   0.00 (  0%)   0.01 ( 50%)     581 kB ( 22%)
+ expand                             :   0.00 (  0%)   0.00 (  0%)   0.01 ( 50%)      63 kB (  2%)
+ integrated RA                      :   0.01 (100%)   0.00 (  0%)   0.00 (  0%)     268 kB ( 10%)
+ symout                             :   0.00 (  0%)   0.00 (  0%)   0.01 ( 50%)     210 kB (  8%)
+ TOTAL                              :   0.01          0.00          0.02           2618 kB
+# cc1 0.02 0.00
+# as 0.00 0.00
